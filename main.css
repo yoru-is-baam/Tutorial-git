@@ -1,9 +1,4 @@
-#Heading_1 {
-  color: red;
-  font-size: 50px;
-}
-
-.Heading_2 {
-  color: blue;
-  font-size: 20px;
+* {
+  padding: 0;
+  margin: 0;
 }
