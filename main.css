@@ -1,11 +1,16 @@
-html {
-  color: green;
+:root {
+  --text-color: violet;
 }
 
 h1 {
-  color: violet !important;
+  --my-color: green;
+  color: var(--my-color);
 }
 
-h1 {
-  color: Purple;
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--text-color);
 }
