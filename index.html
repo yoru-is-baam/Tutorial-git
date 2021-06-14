@@ -4,62 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <link rel="stylesheet" href="main.css" />
     <title>Self-Study master no pro vip</title>
     <style>
-      .paragraph.p1 {
-        /*choose tag have all class paragraph & p1*/
-        color: red;
+      h1#heading-id.heading-class {
+        color: black;
       }
 
-      .parent .children {
-        /*choose tag have all class child in class parent*/
-        color: red;
+      #heading-id.heading-class {
+        color: violet;
       }
-
-      .container .box {
+      .heading-class {
         color: blue;
+      }
+
+      h1 {
+        color: green;
       }
     </style>
   </head>
   <body>
-    <div class="parent">
-      <div class="children">Children 1</div>
-      <div class="children">Children 2</div>
-      <div class="children">Children 3</div>
-    </div>
-
-    <div class="parent">
-      <div class="children">Children 1</div>
-
-      <div class="other-div">
-        <div class="children">Children 2</div>
-
-        <div class="other-div">
-          <div class="children">Children 3</div>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <h1>Heading 1</h1>
-      <p class="paragraph p1">Paragraph 1</p>
-      <p class="paragraph p1">Paragraph 1</p>
-      <p class="paragraph">Paragraph 2</p>
-    </div>
-
-    <div>
-      <div class="container">
-        <div>
-          <div class="box">A box</div>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <a href="https://www.w3schools.com/cssref/css_selectors.asp"
-        >CSS Selectors</a
-      >
-    </div>
+    <h1 id="heading-id" class="heading-class">Priority</h1>
+    <ol>
+      <li>Internal, External</li>
+      <li>Inline - 1000</li>
+      <li>#id - 100</li>
+      <li>.class - 10</li>
+      <li>tag - 1</li>
+      <li>Equal specificity</li>
+      <li>Universal selector and inherited</li>
+    </ol>
   </body>
 </html>
