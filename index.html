@@ -13,12 +13,16 @@
         background: rgb(187, 31, 148);
       }
 
-      .box::after {
-        content: attr(data-title);
+      .box:active {
+        background-color: orange;
       }
 
-      a::after {
-        content: "(" attr(href) ")"; /* fake class */
+      h1:hover {
+        color: green;
+      }
+
+      li:first-child {
+        color: palegoldenrod;
       }
     </style>
   </head>
@@ -27,14 +31,13 @@
 
     <a href="http://fullstack.edu.vn">Learn Programmers</a>
 
-    <h1>CSS functions</h1>
+    <h1>CSS pseudo-classes</h1>
     <ul>
-      <li>var()</li>
-      <li>linear-gradient()</li>
-      <li>rgba()</li>
-      <li>rgb()</li>
-      <li>calc()</li>
-      <li>attr()</li>
+      <li>:root</li>
+      <li>:hover</li>
+      <li>:active</li>
+      <li>:first-child</li>
+      <li>:last-child</li>
     </ul>
   </body>
 </html>
