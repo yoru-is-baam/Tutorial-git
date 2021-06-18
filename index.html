@@ -7,47 +7,34 @@
     <link rel="stylesheet" href="main.css" />
     <title>Self-Study master no pro vip</title>
     <style>
-      html {
-        font-size: 100%;
-      }
-
       .box {
-        width: 50vw;
+        width: calc(120px * 30px);
         height: 50vh;
-        background-color: green;
+        background: rgb(187, 31, 148);
       }
 
-      h1 {
-        font-size: 1rem; /* 1rem = px html */
+      .box::after {
+        content: attr(data-title);
+      }
+
+      a::after {
+        content: "(" attr(href) ")"; /* fake class */
       }
     </style>
   </head>
   <body>
-    <div class="box"></div>
+    <div class="box" data-title="This is pink box"></div>
 
-    <div style="font: 50px">
-      <h1>CSS Units</h1>
-      <h2>Absolute units</h2>
-      <ul>
-        <li>px</li>
-        <li>pt</li>
-        <li>cm</li>
-        <li>mm</li>
-        <li>inch</li>
-        <li>pc</li>
-      </ul>
-      <h2>Relative units</h2>
-      <ul>
-        <li>%</li>
-        <li>rem</li>
-        <li>em</li>
-        <li>vw</li>
-        <li>vh</li>
-        <li>vmin</li>
-        <li>vmax</li>
-        <li>ex</li>
-        <li>ch</li>
-      </ul>
-    </div>
+    <a href="http://fullstack.edu.vn">Learn Programmers</a>
+
+    <h1>CSS functions</h1>
+    <ul>
+      <li>var()</li>
+      <li>linear-gradient()</li>
+      <li>rgba()</li>
+      <li>rgb()</li>
+      <li>calc()</li>
+      <li>attr()</li>
+    </ul>
   </body>
 </html>
