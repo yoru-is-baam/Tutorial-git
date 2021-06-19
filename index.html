@@ -8,37 +8,31 @@
     <title>Self-Study master no pro vip</title>
     <style>
       .box {
-        width: calc(120px * 30px);
-        height: 50vh;
-        background: rgb(187, 31, 148);
-      }
-
-      h1::first-letter {
-        font-size: 50px;
-      }
-
-      h1::first-line {
-        color: red;
-      }
-
-      h1::selection {
-        background-color: violet;
+        width: 60px;
+        height: 60px;
         color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box1 {
+        background-color: #333;
+      }
+
+      .box2 {
+        background-color: orange;
+      }
+
+      .box3 {
+        background-color: firebrick;
+        padding: 10px 12px 8px 14px;
       }
     </style>
   </head>
   <body>
-    <div class="box" data-title="This is pink box"></div>
-
-    <a href="http://fullstack.edu.vn">Learn Programmers</a>
-
-    <h1>CSS pseudo-classes <br />Line 2</h1>
-    <ul>
-      <li>::before</li>
-      <li>::after</li>
-      <li>::first-letter</li>
-      <li>::first-line</li>
-      <li>::selection</li>
-    </ul>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
   </body>
 </html>
