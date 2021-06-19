@@ -13,16 +13,20 @@
         background: rgb(187, 31, 148);
       }
 
-      .box:active {
-        background-color: orange;
+      .box::before {
+        content: "Goodbye";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
       }
 
-      h1:hover {
-        color: green;
-      }
-
-      li:first-child {
-        color: palegoldenrod;
+      .box::after {
+        content: "Hello";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
       }
     </style>
   </head>
@@ -33,11 +37,11 @@
 
     <h1>CSS pseudo-classes</h1>
     <ul>
-      <li>:root</li>
-      <li>:hover</li>
-      <li>:active</li>
-      <li>:first-child</li>
-      <li>:last-child</li>
+      <li>::before</li>
+      <li>::after</li>
+      <li>::first-letter</li>
+      <li>::first-line</li>
+      <li>::selection</li>
     </ul>
   </body>
 </html>
