@@ -13,20 +13,17 @@
         background: rgb(187, 31, 148);
       }
 
-      .box::before {
-        content: "Goodbye";
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
+      h1::first-letter {
+        font-size: 50px;
       }
 
-      .box::after {
-        content: "Hello";
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
+      h1::first-line {
+        color: red;
+      }
+
+      h1::selection {
+        background-color: violet;
+        color: #fff;
       }
     </style>
   </head>
@@ -35,7 +32,7 @@
 
     <a href="http://fullstack.edu.vn">Learn Programmers</a>
 
-    <h1>CSS pseudo-classes</h1>
+    <h1>CSS pseudo-classes <br />Line 2</h1>
     <ul>
       <li>::before</li>
       <li>::after</li>
